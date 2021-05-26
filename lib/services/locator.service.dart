@@ -2,6 +2,9 @@ import 'dart:async';
 
 import 'package:get_it/get_it.dart';
 import 'package:http/http.dart' as http;
+import 'package:tutoriel_flutter/services/user/user.abstract.service.dart';
+import 'package:tutoriel_flutter/services/user/user.api.service.dart';
+import 'package:tutoriel_flutter/services/user/user.offline.service.dart';
 
 import 'const.dart';
 
@@ -22,8 +25,8 @@ Future<bool> ping() async {
 // Fonction permettant d'utiliser le bon service en fonction du cas de figure (Réponse de l'API ou non)
 setupServiceLocator() async {
   if (await ping()) {
-    // locator.registerLazySingleton<UserService>(() => UserApiService());
+    locator.registerLazySingleton<UserService>(() => UserApiService());
   } else {
-    // locator.registerLazySingleton<UserService>(() => UserOfflineService());
+    locator.registerLazySingleton<UserService>(() => UserOfflineService());
   }
 }
