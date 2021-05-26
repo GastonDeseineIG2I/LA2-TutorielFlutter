@@ -143,7 +143,7 @@ Essayez de lancer votre projet fraîchement créé pour vérifier que tout se pa
 
 Vous devez obtenir cet affichage :
 
-<img src="C:\Users\gasto\AppData\Roaming\Typora\typora-user-images\image-20210525201407287.png" alt="image-20210525201407287" style="zoom: 25%;" />
+<img src="img\image-20210525201407287.png" alt="image-20210525201407287" style="zoom: 25%;" />
 
 
 
@@ -618,7 +618,7 @@ class MyApp extends StatelessWidget {
 
 Essayez de relancer l'application, vous devez obtenir un résultat similaire :
 
-<img src="C:\Users\gasto\AppData\Roaming\Typora\typora-user-images\image-20210526210506671.png" alt="image-20210526210506671" style="zoom:33%;" />
+<img src="img\image-20210526210506671.png" alt="image-20210526210506671" style="zoom:33%;" />
 
 
 
@@ -805,7 +805,7 @@ Navigator.push(
 
 Vous devez à la connexion vous retrouver sur une page qui ressemble à ceci :
 
-<img src="C:\Users\gasto\AppData\Roaming\Typora\typora-user-images\image-20210526223422399.png" alt="image-20210526223422399" style="zoom:33%;" />
+<img src="img\image-20210526223422399.png" alt="image-20210526223422399" style="zoom:33%;" />
 
 
 
@@ -906,11 +906,11 @@ Ajoutez ce morceau de code juste après le container contenant *_getTopicsView()
 
 <u>Voici les nouveaux affichages :</u>
 
-<img src="C:\Users\gasto\AppData\Roaming\Typora\typora-user-images\image-20210526225201890.png" alt="image-20210526225201890" style="zoom:33%;" />
+<img src="img\image-20210526225201890.png" alt="image-20210526225201890" style="zoom:33%;" />
 
 
 
-<img src="C:\Users\gasto\AppData\Roaming\Typora\typora-user-images\image-20210526225213631.png" alt="image-20210526225213631" style="zoom:33%;" />
+<img src="img\image-20210526225213631.png" alt="image-20210526225213631" style="zoom:33%;" />
 
 
 
@@ -1082,7 +1082,7 @@ void _notify() async {
 
 Cela devrait vous donner ceci : 
 
-<img src="C:\Users\gasto\AppData\Roaming\Typora\typora-user-images\image-20210526214220524.png" alt="image-20210526214220524" style="zoom:33%;" />
+<img src="img\image-20210526214220524.png" alt="image-20210526214220524" style="zoom:33%;" />
 
 ## Déploiement de l'application
 
