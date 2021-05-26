@@ -5,6 +5,8 @@ import 'package:tutoriel_flutter/pages/login.page.dart';
 import 'package:tutoriel_flutter/services/locator.service.dart';
 import 'package:tutoriel_flutter/services/topic/topic.abstract.service.dart';
 
+import 'new.topics.page.dart';
+
 
 class TopicsPage extends StatefulWidget {
   TopicsPage({Key? key}) : super(key: key);
@@ -97,7 +99,24 @@ class _TopicsPageState extends State<TopicsPage> {
                 ),
                 Container(
                     child: _getTopicsView()
-                ),
+                ), Container(
+                  child: Column(
+                    children: <Widget>[
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          ElevatedButton(onPressed: () => {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => NewTopicsPage(title: 'New Topic')),
+                            )
+                          }, child: Text('New'))
+                        ],
+                      )
+                    ],
+                  ),
+                )
               ]
           )
       ),
