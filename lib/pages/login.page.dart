@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tutoriel_flutter/models/user.model.dart';
+import 'package:tutoriel_flutter/pages/topics.page.dart';
 import 'package:tutoriel_flutter/services/locator.service.dart';
 import 'package:tutoriel_flutter/services/user/user.abstract.service.dart';
 
@@ -118,6 +119,10 @@ class _LoginPageState extends State<LoginPage> {
                                 ScaffoldMessenger.of(context).removeCurrentSnackBar(),
                                 ScaffoldMessenger.of(context)
                                     .showSnackBar(SnackBar(content: Text('Logged.'))),
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => TopicsPage()),
+                                )
                               }
                           );
                         }

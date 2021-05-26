@@ -2,6 +2,9 @@ import 'dart:async';
 
 import 'package:get_it/get_it.dart';
 import 'package:http/http.dart' as http;
+import 'package:tutoriel_flutter/services/topic/topic.abstract.service.dart';
+import 'package:tutoriel_flutter/services/topic/topic.api.service.dart';
+import 'package:tutoriel_flutter/services/topic/topic.offline.sevice.dart';
 import 'package:tutoriel_flutter/services/user/user.abstract.service.dart';
 import 'package:tutoriel_flutter/services/user/user.api.service.dart';
 import 'package:tutoriel_flutter/services/user/user.offline.service.dart';
@@ -26,7 +29,9 @@ Future<bool> ping() async {
 setupServiceLocator() async {
   if (await ping()) {
     locator.registerLazySingleton<UserService>(() => UserApiService());
+    locator.registerLazySingleton<TopicService>(() => TopicApiService());
   } else {
     locator.registerLazySingleton<UserService>(() => UserOfflineService());
+    locator.registerLazySingleton<TopicService>(() => TopicOfflineService());
   }
 }
