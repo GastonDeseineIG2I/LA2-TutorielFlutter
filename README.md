@@ -24,7 +24,7 @@ Bienvenue sur ce tutoriel pour vous initier à Flutter.
 - Accéder au stockage du téléphone
 - Déployer votre application sur un appareil
 
-
+Ce tutoriel est disponible à cette adresse: https://gastondeseineig2i.github.io/
 
 Vous trouverez le code final sur GitHub à cette adresse https://github.com/GastonDeseineIG2I/LA2-TutorielFlutter/
 
